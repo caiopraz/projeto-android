@@ -9,15 +9,14 @@
 }
 
 :root{
-    --cor0: #c5ebd6;
-    --cor1: #83E1AD;
-    --cor2: #3DDC84;
-    --cor3: #2FA866;
-    --cor4: #1A5C37;
-    --cor5: #063d1e;
+    --cor0: #76A5EC;
+    --cor1: #2E79E8;
+    --cor2: #255FB7;
+    --cor3: #344969;
+    --cor4: #153669;
+    --cor5: #09244d;
     --font0: Arial, Verdana, Helvetica, sans-serif;
-    --font1: 'Bebas Neue', cursive;
-    --font2: 'idroid', cursive;
+    --font1: 'Times New Roman', Times, serif;
 }
 
 *{
@@ -45,6 +44,7 @@ header{
 header > h1{
     color: white;
     font-family: var(--font1);
+    font-weight: bold;
     font-size: 3em;
     font-weight: normal;
     margin-bottom: 20px;
@@ -79,7 +79,7 @@ nav > a{
 
 nav > a:hover{
     background-color: var(--cor2);
-    color: black;
+    color: white;
     border-radius: 6px;
 }
 
@@ -97,18 +97,27 @@ main{
 
 main h1{
     color: var(--cor5);
-    font-family: var(--font2);
+    font-family: var(--font1);
+    font-weight: bolder;
     font-weight: normal;
     font-size: 1.8em;
 }
 
 main h2{
-    font-family: var(--font2);
+    font-family: var(--font1);
     font-size: 1.3em;
     font-weight: normal;
-    color: var(--cor4);
+    font-weight: bold;
+    color: white;
     background-image: linear-gradient(to right, var(--cor1), transparent);
     text-indent: 5px;
+}
+
+main ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    padding: 20px;
 }
 
 main p{
@@ -136,9 +145,10 @@ main strong{
 main a{
     text-decoration: none;
     font-weight: bold;
-    background-color: var(--cor1);
+    background-color: var(--cor0);
     padding: 2px 6px;
     color: var(--cor5);
+    border-radius: 5px;
 }
 
 main a:hover{
@@ -189,4 +199,11 @@ footer{
     text-align: center;
     font-size: 0.8em;
     padding: 5px;
+}
+
+footer ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+    padding: 20px;
 }
